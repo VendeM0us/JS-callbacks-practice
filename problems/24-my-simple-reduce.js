@@ -38,7 +38,6 @@ let mySimpleReduce = function(arr, cb) {
     let accu = arr.shift();
 
     arr.forEach(function(el, i) {
-        debugger
         accu = cb(accu, el, i, arr);
     });
 
